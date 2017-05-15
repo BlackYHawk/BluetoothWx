@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+  <button bindtap="startScan">开始扫描</button>
+
+  <scroll-view scroll-y="true" class="scrollView">
+    <view class="block" wx:for="{{list}}" wx:for-item="item">
+     
+      <button bindtap="connectDevice" data-index="{{index}}">{{item.name}}   </button>
+    
+
+    </view>
+  </scroll-view>
+
+</view>
